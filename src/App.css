@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #0B2434;
+  height: 100vh;
+  font-family: "karla", sans-serif;
+  color: #2B283A;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ================ */
+     /* Typography */
+/* ================ */
+
+.title {
+  font-size: 1.6rem;
+  letter-spacing: -.76px;
+}
+
+.description {
+  font-family: "Inter", sans-serif;
+  max-width: 232px;
+  color: #4A4E74;
+  font-size: .82rem;
+  font-weight: 400;
+  letter-spacing: -.39px;
+}
+
+.btn {
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: inherit;
+  background-color: #5035FF;
+  color: #ffffff;
+  border: none;
+  padding: .5em 1em;
+  width: 92px;
+  /* height: 35px; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: #765DFF;
+}
+
+/* ================ */
+     /* Layout */
+/* ================ */
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.board {
+  background-color: #F5F5F5;
+  width: 50%;
+  min-width: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-block: 1.5em;
+  border-radius: 10px;
+}
+
+.die-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-width: 280px;
+  max-width: 320px;
+  margin: .5em auto 1.5em;
+  /* border: 1px solid black; */
+
+}
+
+.die{
+  /* font-size: 1.3rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  width: 45px;
+  height: 45px;
+  margin: .3em;
+  cursor: pointer;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.die:hover {
+  background-color: #d4caca;
+}
+
+.chosen-die {
+  background-color: #59E391;
+}
+
+.chosen-die:hover{
+  background-color: #59E391;
+}
